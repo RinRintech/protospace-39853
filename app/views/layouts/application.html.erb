@@ -36,13 +36,14 @@
       </div>
     </header>
 
-   <div class="greeting">
+<%#
+    <div class="greeting">
       <% if user_signed_in? %>
-        <span>こんにちは、<%= current_user.name %>さん</span>
+<%#        <span>こんにちは、<%= current_user.name %><%#さん</span>
       <% else %>
-        <span></span>
-      <% end %>
-   </div>
+<%#        <span></span>
+<%#      <% end %>
+<%#   </div> %>
 
     <%= yield %>
     <footer class="footer">
